@@ -3,13 +3,13 @@
 ## (Konsultasi Mengenai Data dan Statistik)
 
 **Periode Laporan:** 3 April 2025 - 8 September 2025  
-**Tanggal Laporan:** 19 September 2025
+**Tanggal Laporan:** 09 September 2025
 
 ---
 
 ## 📋 Ringkasan Eksekutif
 
-Chatbot KOMANK telah beroperasi selama periode 3 April - 5 September 2025 dengan total **181 sesi interaksi** pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS Kota Denpasar dengan dukungan **11 admin** yang bertugas pada hari kerja yang berbeda.
+Chatbot KOMANK telah beroperasi selama periode 3 April - 8 September 2025 dengan total **181 sesi interaksi** pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS Kota Denpasar dengan dukungan **11 admin** yang bertugas pada hari kerja yang berbeda.
 
 KOMANK Chatbot ini terintegrasi dengan **JAGRAPATI (Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi)** yang berfungsi sebagai jaringan rekapitulasi data API BPS. Dengan adanya JAGRAPATI, data statistik terbaru dapat diolah secara otomatis dan siap dipakai oleh chatbot untuk menghasilkan insight maupun trivia bagi pengguna.
 
