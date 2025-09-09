@@ -153,7 +153,7 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 
 | Tanggal | Versi           | Kelompok Masalah        | Permasalahan                     | Solusi                                      | Status     |
 | ------- | --------------- | ----------------------- | -------------------------------- | ------------------------------------------- | ---------- |
-| 2-8 Sep | v1.209 - v1.214 | Insight Otomatis        | Tidak ada fitur insight otomatis | Menambahkan fitur trivia berbasis JAGRAPATI | ✅ Teratasi |
+| 2-8 Sep | v1.209 - v1.214 | Insight Otomatis        | Tidak ada fitur insight otomatis | Menambahkan fitur insight berupa trivia otomatis | ✅ Teratasi |
 
 ---
 
