@@ -19,17 +19,17 @@ KOMANK kini terintegrasi dengan **JAGRAPATI (Jaringan Rekapitulasi & Pemantauan 
 
 | No | Nama Admin | Nomor HP      | Hari Aktif | Status | Layanan Harian | Total Pelayanan |
 | -- | ---------- | ------------- | ---------- | ------ | -------------- | --------------- |
-| 1  | Anom       | 6285230692759 | Senin      | Aktif  | 0              | 2               |
-| 2  | Diva       | 6282235320178 | Senin      | Aktif  | 0              | 3               |
-| 3  | Ria        | 6281315398986 | Selasa     | Aktif  | 0              | 5               |
-| 4  | Billa      | 6282230040377 | Selasa     | Aktif  | 0              | 3               |
-| 5  | Novril     | 6287859025822 | Rabu       | Aktif  | 0              | 3               |
-| 6  | Reyhan     | 6285867871759 | Rabu       | Aktif  | 0              | 2               |
-| 7  | Nurtiana   | 6282335768984 | Kamis      | Aktif  | 0              | 4               |
-| 8  | Zahra      | 6285791498384 | Kamis      | Aktif  | 0              | 2               |
-| 9  | Novel      | 6282144492226 | Jumat      | Aktif  | 0              | 3               |
-| 10 | Edy        | 6281916434357 | Jumat      | Aktif  | 0              | 1               |
-| 11 | Adit       | 6281910269632 | Kamis      | Aktif  | 0              | 5               |
+| 1  | Anom       | 628523069xxxx | Senin      | Aktif  | 0              | 2               |
+| 2  | Diva       | 628223532xxxx | Senin      | Aktif  | 0              | 3               |
+| 3  | Ria        | 628131539xxxx | Selasa     | Aktif  | 0              | 5               |
+| 4  | Billa      | 628223004xxxx | Selasa     | Aktif  | 0              | 3               |
+| 5  | Novril     | 628785902xxxx | Rabu       | Aktif  | 0              | 3               |
+| 6  | Reyhan     | 628586787xxxx | Rabu       | Aktif  | 0              | 2               |
+| 7  | Nurtiana   | 628233576xxxx | Kamis      | Aktif  | 0              | 4               |
+| 8  | Zahra      | 628579149xxxx | Kamis      | Aktif  | 0              | 2               |
+| 9  | Novel      | 628214449xxxx | Jumat      | Aktif  | 0              | 3               |
+| 10 | Edy        | 628191643xxxx | Jumat      | Aktif  | 0              | 1               |
+| 11 | Adit       | 628191026xxxx | Kamis      | Aktif  | 0              | 5               |
 
 **Total Admin:** 11 orang  
 **Coverage:** Senin - Jumat
