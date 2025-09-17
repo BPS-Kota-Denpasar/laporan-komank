@@ -150,7 +150,6 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 ## 🎖️ PENCAPAIAN
 
 ✅ **Integrasi dengan JAGRAPATI- Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi**: data API otomatis diolah & siap pakai  
-✅ **Uptime Sistem:** 100% selama periode operasi  
 ✅ **Response Rate:** 100% untuk sesi yang memerlukan bantuan admin  
 ✅ **Data Coverage:** Melayani berbagai jenis data statistik BPS
 
