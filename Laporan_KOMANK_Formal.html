@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laporan Realisasi Kerja Chatbot KOMANK</title>
     <style>
         @media print {
-            body { margin: 0; }
-            .page-break { page-break-before: always; }
-            .no-print { display: none; }
+            body {
+                margin: 0;
+            }
+
+            .page-break {
+                page-break-before: always;
+            }
+
+            .no-print {
+                display: none;
+            }
         }
-        
+
         body {
             font-family: 'Times New Roman', serif;
             line-height: 1.6;
@@ -20,37 +29,37 @@
             background: white;
             color: #333;
         }
-        
+
         .header {
             text-align: center;
             margin-bottom: 40px;
             border-bottom: 3px solid #0066cc;
             padding-bottom: 20px;
         }
-        
+
         .header h1 {
             font-size: 18pt;
             font-weight: bold;
             margin: 0;
             color: #0066cc;
         }
-        
+
         .header h2 {
             font-size: 16pt;
             margin: 5px 0;
             color: #004499;
         }
-        
+
         .header .meta {
             font-size: 11pt;
             color: #666;
             margin-top: 15px;
         }
-        
+
         .section {
             margin: 25px 0;
         }
-        
+
         .section h2 {
             font-size: 14pt;
             font-weight: bold;
@@ -59,63 +68,64 @@
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
-        
+
         .section h3 {
             font-size: 12pt;
             font-weight: bold;
             color: #004499;
             margin: 20px 0 10px 0;
         }
-        
+
         .summary-box {
             background: #f8f9fa;
             border-left: 4px solid #0066cc;
             padding: 15px;
             margin: 15px 0;
         }
-        
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 15px 0;
             font-size: 10pt;
         }
-        
-        th, td {
+
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
         }
-        
+
         th {
             background-color: #0066cc;
             color: white;
             font-weight: bold;
         }
-        
+
         .stats-table td:last-child {
             text-align: center;
         }
-        
+
         .highlight-success {
             background-color: #d4edda;
         }
-        
+
         .highlight-warning {
             background-color: #fff3cd;
         }
-        
+
         .achievement-list {
             background: #e8f5e8;
             padding: 15px;
             border-radius: 5px;
             margin: 15px 0;
         }
-        
+
         .achievement-list li {
             margin: 5px 0;
         }
-        
+
         .footer {
             margin-top: 40px;
             padding-top: 20px;
@@ -124,12 +134,12 @@
             font-size: 10pt;
             color: #666;
         }
-        
+
         .btn-container {
             text-align: center;
             margin: 20px 0;
         }
-        
+
         .btn {
             background: #0066cc;
             color: white;
@@ -140,26 +150,27 @@
             cursor: pointer;
             font-size: 11pt;
         }
-        
+
         .btn:hover {
             background: #004499;
         }
-        
+
         .version-table {
             font-size: 9pt;
         }
-        
+
         .status-success {
             color: #28a745;
             font-weight: bold;
         }
-        
+
         .status-pending {
             color: #dc3545;
             font-weight: bold;
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1>LAPORAN REALISASI KERJA</h1>
@@ -180,9 +191,14 @@
     <div class="section">
         <h2>📋 RINGKASAN EKSEKUTIF</h2>
         <div class="summary-box">
-            <p>Chatbot KOMANK telah beroperasi selama periode 3 April - 16 September 2025 dengan total <strong>184 sesi interaksi</strong> pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS Kota Denpasar dengan dukungan <strong>11 admin</strong> yang bertugas pada hari kerja yang berbeda.</p>
-            
-            <p>KOMANK Chatbot ini terintegrasi dengan <strong>JAGRAPATI (Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi)</strong> yang berfungsi sebagai jaringan rekapitulasi data API BPS. Dengan adanya JAGRAPATI, data statistik terbaru dapat diolah secara otomatis dan siap dipakai oleh chatbot untuk menghasilkan insight maupun trivia bagi pengguna.</p>
+            <p>Chatbot KOMANK telah beroperasi selama periode 3 April - 16 September 2025 dengan total <strong>184 sesi
+                    interaksi</strong> pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS
+                Kota Denpasar dengan dukungan <strong>11 admin</strong> yang bertugas pada hari kerja yang berbeda.</p>
+
+            <p>KOMANK Chatbot ini terintegrasi dengan <strong>JAGRAPATI (Jaringan Rekapitulasi & Pemantauan Tabel
+                    Dinamis Terintegrasi)</strong> yang berfungsi sebagai jaringan rekapitulasi data API BPS. Dengan
+                adanya JAGRAPATI, data statistik terbaru dapat diolah secara otomatis dan siap dipakai oleh chatbot
+                untuk menghasilkan insight maupun trivia bagi pengguna.</p>
         </div>
     </div>
 
@@ -309,7 +325,7 @@
 
     <div class="section">
         <h2>📊 STATISTIK LAYANAN</h2>
-        
+
         <h3>Distribusi Status Sesi</h3>
         <table class="stats-table">
             <thead>
@@ -370,7 +386,7 @@
 
     <div class="section">
         <h2>📈 POLA PENGGUNAAN</h2>
-        
+
         <h3>Tren Bulanan</h3>
         <table>
             <thead>
@@ -488,7 +504,7 @@
 
     <div class="section">
         <h2>🔧 LAYANAN ADMIN</h2>
-        
+
         <h3>Statistik Sesi Admin</h3>
         <ul>
             <li><strong>Total Sesi Admin:</strong> 38 sesi</li>
@@ -504,12 +520,153 @@
         </ul>
 
         <h3>Status Penyelesaian</h3>
-        <p>Semua sesi admin tercatat dengan status <strong>"Selesai"</strong>, menunjukkan tingkat penyelesaian <strong>100%</strong>.</p>
+        <p>Semua sesi admin tercatat dengan status <strong>"Selesai"</strong>, menunjukkan tingkat penyelesaian
+            <strong>100%</strong>.</p>
     </div>
 
     <div class="section">
         <h2>🔧 HISTORI PENGEMBANGAN & PERBAIKAN</h2>
-        
+
+        <h3>Versi Awal (Initial Release)</h3>
+        <p><strong>Versi 1.0 (3 April 2025):</strong> Perilisan awal Chatbot KOMANK dengan fitur dasar pencarian data
+            statistik dan sesi admin manual.</p>
+
+        <h3>Detail Pengembangan Mei 2025</h3>
+        <table class="version-table">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Versi</th>
+                    <th>Permasalahan</th>
+                    <th>Solusi</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5 Mei</td>
+                    <td>v1.1-v1.94</td>
+                    <td>Alur chatbot kurang tepat</td>
+                    <td>Memperbaiki alur chatbot</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>9-17 Mei</td>
+                    <td>v1.95-v1.120</td>
+                    <td>Sesi dengan Admin masih berantakan</td>
+                    <td>Iterasi perbaikan alur sesi admin</td>
+                    <td class="status-pending">❌ Belum</td>
+                </tr>
+                <tr>
+                    <td>19 Mei</td>
+                    <td>v1.121-v1.127</td>
+                    <td>Sesi admin berantakan + konfirmasi data</td>
+                    <td>Menyempurnakan alur sesi admin & chatbot</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>20-21 Mei</td>
+                    <td>v1.128-v1.160</td>
+                    <td>Error sesi admin</td>
+                    <td>Perbaikan bertahap</td>
+                    <td class="status-pending">❌ Belum</td>
+                </tr>
+                <tr>
+                    <td>22 Mei</td>
+                    <td>v1.161-v1.165</td>
+                    <td>Error sesi admin</td>
+                    <td>Perbaikan final</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>23 Mei</td>
+                    <td>v1.166-v1.167</td>
+                    <td>Navigasi kurang jelas</td>
+                    <td>Menambahkan kalimat navigasi kembali ke menu</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>26 Mei</td>
+                    <td>v1.168</td>
+                    <td>Navigasi userstate kurang tepat</td>
+                    <td>Perbaikan navigasi menu utama</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Detail Pengembangan Juni 2025</h3>
+        <table class="version-table">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Versi</th>
+                    <th>Permasalahan</th>
+                    <th>Solusi</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2-5 Juni</td>
+                    <td>v1.169-v1.176</td>
+                    <td>Pemilihan admin, error sesi, format tanggal</td>
+                    <td>Penyesuaian sistem pemilihan admin, rollback error</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>7-10 Juni</td>
+                    <td>v1.177-v1.180</td>
+                    <td>Timeout API BPS, validasi data</td>
+                    <td>Batch script, validasi duplikasi data</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>13-15 Juni</td>
+                    <td>v1.181-v1.201</td>
+                    <td>Sesi admin >24 jam, pesan rusak, maintenance</td>
+                    <td>Timeout otomatis, mode maintenance</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>18-24 Juni</td>
+                    <td>v1.202-v1.208</td>
+                    <td>Jam kerja admin, idle time, bug variabel</td>
+                    <td>Penyesuaian jam kerja, perbaikan variabel</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Detail Pengembangan September 2025</h3>
+        <table class="version-table">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Versi</th>
+                    <th>Permasalahan</th>
+                    <th>Solusi</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2-8 Sep</td>
+                    <td>v1.209-v1.214</td>
+                    <td>Tidak ada fitur insight otomatis</td>
+                    <td>Menambahkan fitur insight berupa trivia otomatis</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>10 Sep</td>
+                    <td>v1.215</td>
+                    <td>Nomor superadmin salah</td>
+                    <td>Mengganti nomor superadmin</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+            </tbody>
+        </table>
+
         <h3>Kelompok Permasalahan Utama</h3>
         <table class="version-table">
             <thead>
@@ -575,7 +732,7 @@
                     <td>8</td>
                     <td>Insight Otomatis (Trivia of The Day)</td>
                     <td>September 2025</td>
-                    <td>v1.209 - v1.214</td>
+                    <td>v1.209 - v1.215</td>
                     <td class="status-success">✅ Teratasi</td>
                 </tr>
             </tbody>
@@ -583,10 +740,10 @@
 
         <h3>Statistik Pengembangan (Final)</h3>
         <ul>
-            <li><strong>Total Update:</strong> 41 entri perbaikan (v1.0 - v1.214)</li>
+            <li><strong>Total Update:</strong> 44 entri perbaikan (v1.0 - v1.215)</li>
             <li><strong>Kelompok Permasalahan:</strong> 8 masalah utama</li>
             <li><strong>Semua Permasalahan:</strong> ✅ Teratasi</li>
-            <li><strong>Periode Pengembangan:</strong> 3 April - 16 September 2025 (166 hari)</li>
+            <li><strong>Periode Pengembangan:</strong> 3 April - 10 September 2025 (160 hari)</li>
             <li><strong>Developer:</strong> Novril Ihza Razenda, S.Tr.Stat.</li>
             <li><strong>Success Rate:</strong> <strong>100% (8/8 kelompok masalah terselesaikan)</strong></li>
         </ul>
@@ -596,9 +753,12 @@
         <h2>🎖️ PENCAPAIAN</h2>
         <div class="achievement-list">
             <ul>
-                <li>✅ <strong>Integrasi dengan JAGRAPATI</strong> - Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi: data API otomatis diolah & siap pakai</li>
+                <li>✅ <strong>Integrasi dengan JAGRAPATI</strong> - Jaringan Rekapitulasi & Pemantauan Tabel Dinamis
+                    Terintegrasi: data API otomatis diolah & siap pakai</li>
                 <li>✅ <strong>Response Rate:</strong> 100% untuk sesi yang memerlukan bantuan admin</li>
                 <li>✅ <strong>Data Coverage:</strong> Melayani berbagai jenis data statistik BPS</li>
+                <li>✅ <strong>Insight Otomatis (Trivia of The Day):</strong> Fitur generate otomatis trivia statistik
+                    dari data real-time</li>
             </ul>
         </div>
     </div>
@@ -628,4 +788,5 @@
         }
     </script>
 </body>
+
 </html>
