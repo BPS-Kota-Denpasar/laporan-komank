@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Realisasi Kerja Chatbot KOMANK</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .page-break { page-break-before: always; }
+            .no-print { display: none; }
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+            color: #333;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 18pt;
+            font-weight: bold;
+            margin: 0;
+            color: #0066cc;
+        }
+        
+        .header h2 {
+            font-size: 16pt;
+            margin: 5px 0;
+            color: #004499;
+        }
+        
+        .header .meta {
+            font-size: 11pt;
+            color: #666;
+            margin-top: 15px;
+        }
+        
+        .section {
+            margin: 25px 0;
+        }
+        
+        .section h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #0066cc;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .section h3 {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #004499;
+            margin: 20px 0 10px 0;
+        }
+        
+        .summary-box {
+            background: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #0066cc;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .stats-table td:last-child {
+            text-align: center;
+        }
+        
+        .highlight-success {
+            background-color: #d4edda;
+        }
+        
+        .highlight-warning {
+            background-color: #fff3cd;
+        }
+        
+        .achievement-list {
+            background: #e8f5e8;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .achievement-list li {
+            margin: 5px 0;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #0066cc;
+            text-align: center;
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        .btn-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .btn {
+            background: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 11pt;
+        }
+        
+        .btn:hover {
+            background: #004499;
+        }
+        
+        .version-table {
+            font-size: 9pt;
+        }
+        
+        .status-success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .status-pending {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>LAPORAN REALISASI KERJA</h1>
+        <h2>CHATBOT KOMANK</h2>
+        <h2>(Konsultasi Mengenai Data dan Statistik)</h2>
+        <div class="meta">
+            <strong>Periode Laporan:</strong> 3 April 2025 - 16 September 2025<br>
+            <strong>Tanggal Laporan:</strong> 17 September 2025<br>
+            <strong>Instansi:</strong> Badan Pusat Statistik Kota Denpasar
+        </div>
+    </div>
+
+    <div class="btn-container no-print">
+        <button class="btn" onclick="window.print()">🖨️ Cetak PDF</button>
+        <button class="btn" onclick="downloadAsWord()">📄 Download DOCX</button>
+    </div>
+
+    <div class="section">
+        <h2>📋 RINGKASAN EKSEKUTIF</h2>
+        <div class="summary-box">
+            <p>Chatbot KOMANK telah beroperasi selama periode 3 April - 16 September 2025 dengan total <strong>184 sesi interaksi</strong> pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS Kota Denpasar dengan dukungan <strong>11 admin</strong> yang bertugas pada hari kerja yang berbeda.</p>
+            
+            <p>KOMANK Chatbot ini terintegrasi dengan <strong>JAGRAPATI (Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi)</strong> yang berfungsi sebagai jaringan rekapitulasi data API BPS. Dengan adanya JAGRAPATI, data statistik terbaru dapat diolah secara otomatis dan siap dipakai oleh chatbot untuk menghasilkan insight maupun trivia bagi pengguna.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>👥 TIM ADMIN</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Admin</th>
+                    <th>Nomor HP</th>
+                    <th>Hari Aktif</th>
+                    <th>Status</th>
+                    <th>Layanan Harian</th>
+                    <th>Total Pelayanan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Anom</td>
+                    <td>628523069xxxx</td>
+                    <td>Senin</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Diva</td>
+                    <td>628223532xxxx</td>
+                    <td>Senin</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ria</td>
+                    <td>628131539xxxx</td>
+                    <td>Selasa</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Billa</td>
+                    <td>628223004xxxx</td>
+                    <td>Selasa</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Novril</td>
+                    <td>628785902xxxx</td>
+                    <td>Rabu</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Reyhan</td>
+                    <td>628586787xxxx</td>
+                    <td>Rabu</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Nurtiana</td>
+                    <td>628233576xxxx</td>
+                    <td>Kamis</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Zahra</td>
+                    <td>628579149xxxx</td>
+                    <td>Kamis</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Novel</td>
+                    <td>628214449xxxx</td>
+                    <td>Jumat</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Edy</td>
+                    <td>628191643xxxx</td>
+                    <td>Jumat</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Adit</td>
+                    <td>628191026xxxx</td>
+                    <td>Kamis</td>
+                    <td>Aktif</td>
+                    <td>0</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Total Admin:</strong> 11 orang | <strong>Coverage:</strong> Senin - Jumat</p>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>📊 STATISTIK LAYANAN</h2>
+        
+        <h3>Distribusi Status Sesi</h3>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>Status</th>
+                    <th>Jumlah</th>
+                    <th>Persentase</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="highlight-warning">
+                    <td><strong>Non-Layanan</strong></td>
+                    <td>85</td>
+                    <td>46%</td>
+                    <td>Sesi tanpa layanan data</td>
+                </tr>
+                <tr class="highlight-success">
+                    <td><strong>Layanan Chatbot (Data Sesuai)</strong></td>
+                    <td>48</td>
+                    <td>26%</td>
+                    <td>Bot berhasil memberikan data yang sesuai</td>
+                </tr>
+                <tr class="highlight-success">
+                    <td><strong>Layanan Admin</strong></td>
+                    <td>38</td>
+                    <td>21%</td>
+                    <td>Ditangani langsung oleh admin</td>
+                </tr>
+                <tr>
+                    <td><strong>Layanan Chatbot (Data Tidak Sesuai)</strong></td>
+                    <td>8</td>
+                    <td>4%</td>
+                    <td>Bot memberikan data tidak relevan</td>
+                </tr>
+                <tr>
+                    <td><strong>Layanan Chatbot (Batal)</strong></td>
+                    <td>5</td>
+                    <td>3%</td>
+                    <td>Sesi dibatalkan</td>
+                </tr>
+                <tr class="highlight-success">
+                    <td><strong>Total</strong></td>
+                    <td><strong>184</strong></td>
+                    <td><strong>100%</strong></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Tingkat Keberhasilan Layanan</h3>
+        <ul>
+            <li><strong>Layanan Berhasil:</strong> 86 sesi (47% - Chatbot + Admin)</li>
+            <li><strong>Layanan Tidak Optimal:</strong> 13 sesi (7% - Data tidak sesuai + Batal)</li>
+            <li><strong>Non-Layanan:</strong> 85 sesi (46%)</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>📈 POLA PENGGUNAAN</h2>
+        
+        <h3>Tren Bulanan</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bulan</th>
+                    <th>Jumlah Sesi</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>April 2025</td>
+                    <td>3</td>
+                    <td>3-30 April (fase awal)</td>
+                </tr>
+                <tr class="highlight-success">
+                    <td>Mei 2025</td>
+                    <td>61</td>
+                    <td>Puncak penggunaan</td>
+                </tr>
+                <tr>
+                    <td>Juni 2025</td>
+                    <td>47</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Juli 2025</td>
+                    <td>22</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Agustus 2025</td>
+                    <td>12</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>September 2025</td>
+                    <td>9</td>
+                    <td>1-16 September</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Jenis Permintaan Data Populer</h3>
+        <ol>
+            <li><strong>Data Kependudukan</strong> (jumlah penduduk, distribusi demografis)</li>
+            <li><strong>Data Ekonomi</strong> (inflasi, PDRB, kemiskinan)</li>
+            <li><strong>Data Ketenagakerjaan</strong> (pengangguran, angkatan kerja)</li>
+            <li><strong>Data Pendidikan</strong> (IPM, rata-rata lama sekolah)</li>
+            <li><strong>Data Pajak</strong> (pajak hotel, restoran, hiburan)</li>
+            <li><strong>Data UMKM</strong> (pelaku usaha mikro)</li>
+            <li><strong>Data Lingkungan</strong> (sampah, kualitas lingkungan)</li>
+        </ol>
+
+        <h3>Profil Pengguna</h3>
+        <ul>
+            <li><strong>Mahasiswa/Akademisi:</strong> Mayoritas (Universitas Udayana, Universitas Warmadewa, dll.)</li>
+            <li><strong>Instansi Pemerintah:</strong> BPS, Dinas Kesehatan, Dinas Pariwisata</li>
+            <li><strong>Masyarakat Umum:</strong> Peneliti independen, konsultan</li>
+            <li><strong>Wilayah:</strong> Denpasar dan sekitarnya, beberapa dari luar Bali</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h2>🎯 KATA KUNCI PENCARIAN TERTINGGI</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kata Kunci</th>
+                    <th>Skor Relevansi</th>
+                    <th>Kategori</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PDRB/Pertumbuhan ekonomi</td>
+                    <td>0.85067</td>
+                    <td>Ekonomi</td>
+                </tr>
+                <tr>
+                    <td>Data penduduk Kota Denpasar</td>
+                    <td>0.80672</td>
+                    <td>Demografi</td>
+                </tr>
+                <tr>
+                    <td>Indeks Harga Konsumen</td>
+                    <td>0.78072</td>
+                    <td>Ekonomi</td>
+                </tr>
+                <tr>
+                    <td>Data UMKM</td>
+                    <td>0.78003</td>
+                    <td>Ekonomi</td>
+                </tr>
+                <tr>
+                    <td>Proyeksi penduduk</td>
+                    <td>0.76893</td>
+                    <td>Demografi</td>
+                </tr>
+                <tr>
+                    <td>Indeks pembangunan gender</td>
+                    <td>0.76511</td>
+                    <td>Sosial</td>
+                </tr>
+                <tr>
+                    <td>Kepadatan penduduk</td>
+                    <td>0.74798</td>
+                    <td>Demografi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>🔧 LAYANAN ADMIN</h2>
+        
+        <h3>Statistik Sesi Admin</h3>
+        <ul>
+            <li><strong>Total Sesi Admin:</strong> 38 sesi</li>
+            <li><strong>Periode Aktif:</strong> 23 Mei - 16 September 2025</li>
+            <li><strong>Durasi Rata-rata:</strong> Bervariasi dari 2 menit hingga 6 jam</li>
+        </ul>
+
+        <h3>Admin Paling Aktif:</h3>
+        <ul>
+            <li>Nurtiana (Kamis): 4 sesi</li>
+            <li>Ria (Selasa): 3 sesi</li>
+            <li>Adit (Kamis): 3 sesi</li>
+        </ul>
+
+        <h3>Status Penyelesaian</h3>
+        <p>Semua sesi admin tercatat dengan status <strong>"Selesai"</strong>, menunjukkan tingkat penyelesaian <strong>100%</strong>.</p>
+    </div>
+
+    <div class="section">
+        <h2>🔧 HISTORI PENGEMBANGAN & PERBAIKAN</h2>
+        
+        <h3>Kelompok Permasalahan Utama</h3>
+        <table class="version-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Kelompok Masalah</th>
+                    <th>Periode Penanganan</th>
+                    <th>Versi</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Alur Chatbot</td>
+                    <td>Mei 2025</td>
+                    <td>v1.1 - v1.94</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sesi Admin</td>
+                    <td>Mei - Juni 2025</td>
+                    <td>v1.95 - v1.201</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Error Sesi Admin</td>
+                    <td>Mei 2025</td>
+                    <td>v1.128 - v1.165</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Navigasi</td>
+                    <td>Mei 2025</td>
+                    <td>v1.166 - v1.168</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pemilihan Admin</td>
+                    <td>Juni 2025</td>
+                    <td>v1.169 - v1.176</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>API Timeout & Validasi</td>
+                    <td>Juni 2025</td>
+                    <td>v1.177 - v1.180</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Jam Kerja & Variabel</td>
+                    <td>Juni 2025</td>
+                    <td>v1.202 - v1.208</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Insight Otomatis (Trivia of The Day)</td>
+                    <td>September 2025</td>
+                    <td>v1.209 - v1.214</td>
+                    <td class="status-success">✅ Teratasi</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Statistik Pengembangan (Final)</h3>
+        <ul>
+            <li><strong>Total Update:</strong> 41 entri perbaikan (v1.0 - v1.214)</li>
+            <li><strong>Kelompok Permasalahan:</strong> 8 masalah utama</li>
+            <li><strong>Semua Permasalahan:</strong> ✅ Teratasi</li>
+            <li><strong>Periode Pengembangan:</strong> 3 April - 16 September 2025 (166 hari)</li>
+            <li><strong>Developer:</strong> Novril Ihza Razenda, S.Tr.Stat.</li>
+            <li><strong>Success Rate:</strong> <strong>100% (8/8 kelompok masalah terselesaikan)</strong></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>🎖️ PENCAPAIAN</h2>
+        <div class="achievement-list">
+            <ul>
+                <li>✅ <strong>Integrasi dengan JAGRAPATI</strong> - Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi: data API otomatis diolah & siap pakai</li>
+                <li>✅ <strong>Uptime Sistem:</strong> 100% selama periode operasi</li>
+                <li>✅ <strong>Response Rate:</strong> 100% untuk sesi yang memerlukan bantuan admin</li>
+                <li>✅ <strong>Data Coverage:</strong> Melayani berbagai jenis data statistik BPS</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <strong>Tim Pengembang:</strong> Novril Ihza Razenda, S.Tr.Stat. (novril.razenda@bps.go.id)<br>
+        <strong>Kontak KOMANK:</strong> +62 812-8882-5171<br>
+        <strong>Last Updated:</strong> 17 September 2025<br><br>
+        <em>Laporan ini disusun berdasarkan data log sistem Chatbot KOMANK periode 3 April - 16 September 2025</em>
+    </div>
+
+    <script>
+        function downloadAsWord() {
+            // Create a simplified HTML version for Word
+            const content = document.documentElement.outerHTML;
+            const blob = new Blob([content], {
+                type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+            });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Laporan_KOMANK_BPS_Denpasar_2025.doc';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
