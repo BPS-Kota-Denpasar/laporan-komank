@@ -112,9 +112,9 @@ Berdasarkan analisis log pencarian:
 * **Durasi Rata-rata:** Bervariasi dari 2 menit hingga 6 jam
 * **Admin Paling Aktif:**
 
-  * Nurtiana (Kamis): 4 sesi
   * Ria (Selasa): 5 sesi
   * Adit (Kamis): 5 sesi
+  * Nurtiana (Kamis): 4 sesi
 
 ### Status Penyelesaian
 
@@ -123,6 +123,37 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 ---
 
 ## 🔧 HISTORI PENGEMBANGAN & PERBAIKAN
+
+### Versi Awal (Initial Release)
+* **Versi 1.0 (3 April 2025):** Perilisan awal Chatbot KOMANK dengan fitur dasar pencarian data statistik dan sesi admin manual.
+
+### Detail Pengembangan Mei 2025
+
+| Tanggal   | Versi           | Permasalahan                            | Solusi                                       | Status     |
+| --------- | --------------- | --------------------------------------- | -------------------------------------------- | ---------- |
+| 5 Mei     | v1.1-v1.94      | Alur chatbot kurang tepat               | Memperbaiki alur chatbot                     | ✅ Teratasi |
+| 9-17 Mei  | v1.95-v1.120    | Sesi dengan Admin masih berantakan      | Iterasi perbaikan alur sesi admin            | ❌ Belum    |
+| 19 Mei    | v1.121-v1.127   | Sesi admin berantakan + konfirmasi data | Menyempurnakan alur sesi admin & chatbot     | ✅ Teratasi |
+| 20-21 Mei | v1.128-v1.160   | Error sesi admin                        | Perbaikan bertahap                           | ❌ Belum    |
+| 22 Mei    | v1.161-v1.165   | Error sesi admin                        | Perbaikan final                              | ✅ Teratasi |
+| 23 Mei    | v1.166-v1.167   | Navigasi kurang jelas                   | Menambahkan kalimat navigasi kembali ke menu | ✅ Teratasi |
+| 26 Mei    | v1.168          | Navigasi userstate kurang tepat         | Perbaikan navigasi menu utama                | ✅ Teratasi |
+
+### Detail Pengembangan Juni 2025
+
+| Tanggal     | Versi           | Permasalahan                             | Solusi                                             | Status     |
+| ----------- | --------------- | ---------------------------------------- | -------------------------------------------------- | ---------- |
+| 2-5 Juni    | v1.169-v1.176   | Pemilihan admin, error sesi, format tanggal | Penyesuaian sistem pemilihan admin, rollback error | ✅ Teratasi |
+| 7-10 Juni   | v1.177-v1.180   | Timeout API BPS, validasi data          | Batch script, validasi duplikasi data             | ✅ Teratasi |
+| 13-15 Juni  | v1.181-v1.201   | Sesi admin >24 jam, pesan rusak, maintenance | Timeout otomatis, mode maintenance            | ✅ Teratasi |
+| 18-24 Juni  | v1.202-v1.208   | Jam kerja admin, idle time, bug variabel | Penyesuaian jam kerja, perbaikan variabel         | ✅ Teratasi |
+
+### Detail Pengembangan September 2025
+
+| Tanggal  | Versi     | Permasalahan                      | Solusi                                           | Status     |
+| -------- | --------- | --------------------------------- | ------------------------------------------------ | ---------- |
+| 2-8 Sep  | v1.209-v1.214 | Tidak ada fitur insight otomatis | Menambahkan fitur insight berupa trivia otomatis | ✅ Teratasi |
+| 10 Sep   | v1.215    | Nomor superadmin salah            | Mengganti nomor superadmin                       | ✅ Teratasi |
 
 ### Kelompok Permasalahan Utama
 
@@ -135,23 +166,24 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 | 5  | Pemilihan Admin | Juni 2025 | v1.169 - v1.176 | ✅ Teratasi |
 | 6  | API Timeout & Validasi | Juni 2025 | v1.177 - v1.180 | ✅ Teratasi |
 | 7  | Jam Kerja & Variabel | Juni 2025 | v1.202 - v1.208 | ✅ Teratasi |
-| 8  | Insight Otomatis (Trivia of The Day) | September 2025 | v1.209 - v1.214 | ✅ Teratasi |
+| 8  | Insight Otomatis (Trivia of The Day) | September 2025 | v1.209 - v1.215 | ✅ Teratasi |
 
 ### Statistik Pengembangan (Final)
 
-* **Total Update:** 41 entri perbaikan (v1.0 - v1.214)  
+* **Total Update:** 44 entri perbaikan (v1.0 - v1.215)  
 * **Kelompok Permasalahan:** 8 masalah utama  
 * **Semua Permasalahan:** ✅ Teratasi  
-* **Periode Pengembangan:** 3 April - 16 September 2025 (166 hari)  
+* **Periode Pengembangan:** 3 April - 10 September 2025 (160 hari)  
 * **Developer:** Novril Ihza Razenda, S.Tr.Stat.  
 * **Success Rate:** **100% (8/8 kelompok masalah terselesaikan)**
 
 ---
 ## 🎖️ PENCAPAIAN
 
-✅ **Integrasi dengan JAGRAPATI- Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi**: data API otomatis diolah & siap pakai  
+✅ **Integrasi dengan JAGRAPATI** - Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi: data API otomatis diolah & siap pakai  
 ✅ **Response Rate:** 100% untuk sesi yang memerlukan bantuan admin  
-✅ **Data Coverage:** Melayani berbagai jenis data statistik BPS
+✅ **Data Coverage:** Melayani berbagai jenis data statistik BPS  
+✅ **Insight Otomatis (Trivia of The Day):** Fitur generate otomatis trivia statistik dari data real-time
 
 ---
 
