@@ -103,6 +103,30 @@ Berdasarkan analisis log pencarian:
 
 ---
 
+## 💰 BIAYA OPERASIONAL
+
+### Biaya Langganan Fonnte WhatsApp API
+
+Chatbot KOMANK menggunakan layanan Fonnte untuk integrasi WhatsApp API. Berikut adalah rincian biaya langganan:
+
+| Tanggal          | Bulan     | Jenis Paket    | Keterangan           |
+| ---------------- | --------- | -------------- | -------------------- |
+| 12 Juni 2025     | Juni      | Paket Regular  | Pembayaran bulan ke-1 |
+| 7 Juli 2025      | Juli      | Paket Regular  | Pembayaran bulan ke-2 |
+| 7 Agustus 2025   | Agustus   | Paket Regular  | Pembayaran bulan ke-3 |
+| 9 September 2025 | September | Paket Regular  | Pembayaran bulan ke-4 |
+
+### Ringkasan Biaya
+
+* **Total Periode Berlangganan:** 4 bulan (Juni - September 2025)
+* **Jenis Paket:** Fonnte Paket Regular
+* **Frekuensi Pembayaran:** Bulanan
+* **Status Pembayaran:** Lancar, tanpa keterlambatan
+
+*Catatan: Biaya langganan Fonnte diperlukan untuk menjaga konektivitas WhatsApp API yang stabil dan mendukung layanan chatbot 24/7.*
+
+---
+
 ## 🔧 LAYANAN ADMIN
 
 ### Statistik Sesi Admin
