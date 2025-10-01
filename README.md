@@ -1,15 +1,15 @@
 # LAPORAN REALISASI KERJA CHATBOT KOMANK
 ## (Konsultasi Mengenai Data dan Statistik)
 
-**Periode Laporan:** 3 April 2025 - 16 September 2025  
-**Tanggal Laporan:** 17 September 2025  
+**Periode Laporan:** 3 April 2025 - 30 September 2025  
+**Tanggal Laporan:** 1 Oktober 2025  
 **Instansi:** Badan Pusat Statistik Kota Denpasar
 
 ---
 
 ## 📋 RINGKASAN EKSEKUTIF
 
-Chatbot KOMANK telah beroperasi selama periode 3 April - 16 September 2025 dengan total **184 sesi interaksi** pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS Kota Denpasar dengan dukungan **11 admin** yang bertugas pada hari kerja yang berbeda.
+Chatbot KOMANK telah beroperasi selama periode 3 April - 30 September 2025 dengan total **188 sesi interaksi** pengguna. Sistem ini melayani permintaan data statistik dan informasi dari BPS Kota Denpasar dengan dukungan **11 admin** yang bertugas pada hari kerja yang berbeda.
 
 KOMANK Chatbot ini terintegrasi dengan **JAGRAPATI (Jaringan Rekapitulasi & Pemantauan Tabel Dinamis Terintegrasi)** yang berfungsi sebagai jaringan rekapitulasi data API BPS. Dengan adanya JAGRAPATI, data statistik terbaru dapat diolah secara otomatis dan siap dipakai oleh chatbot untuk menghasilkan insight maupun trivia bagi pengguna.
 
@@ -24,12 +24,12 @@ KOMANK Chatbot ini terintegrasi dengan **JAGRAPATI (Jaringan Rekapitulasi & Pema
 | 3  | Ria        | 628131539xxxx | Selasa     | Aktif  | 0              | 5               |
 | 4  | Billa      | 628223004xxxx | Selasa     | Aktif  | 0              | 3               |
 | 5  | Novril     | 628785902xxxx | Rabu       | Aktif  | 0              | 3               |
-| 6  | Reyhan     | 628586787xxxx | Rabu       | Aktif  | 0              | 2               |
+| 6  | Reyhan     | 628586787xxxx | Rabu       | Aktif  | 0              | 3               |
 | 7  | Nurtiana   | 628233576xxxx | Kamis      | Aktif  | 0              | 4               |
 | 8  | Zahra      | 628579149xxxx | Kamis      | Aktif  | 0              | 2               |
 | 9  | Novel      | 628214449xxxx | Jumat      | Aktif  | 0              | 3               |
 | 10 | Edy        | 628191643xxxx | Jumat      | Aktif  | 0              | 1               |
-| 11 | Adit       | 628191026xxxx | Kamis      | Aktif  | 0              | 5               |
+| 11 | Adit       | 628191026xxxx | Kamis      | Aktif  | 0              | 6               |
 
 **Total Admin:** 11 orang  
 **Coverage:** Senin - Jumat
@@ -42,18 +42,18 @@ KOMANK Chatbot ini terintegrasi dengan **JAGRAPATI (Jaringan Rekapitulasi & Pema
 
 | Status                                  | Jumlah  | Persentase | Keterangan                               |
 | --------------------------------------- | ------- | ---------- | ---------------------------------------- |
-| **Non-Layanan**                         | 85      | 46%        | Sesi tanpa layanan data                  |
-| **Layanan Chatbot (Data Sesuai)**       | 48      | 26%        | Bot berhasil memberikan data yang sesuai |
-| **Layanan Admin**                       | 38      | 21%        | Ditangani langsung oleh admin            |
+| **Non-Layanan**                         | 85      | 45%        | Sesi tanpa layanan data                  |
+| **Layanan Chatbot (Data Sesuai)**       | 50      | 27%        | Bot berhasil memberikan data yang sesuai |
+| **Layanan Admin**                       | 40      | 21%        | Ditangani langsung oleh admin            |
 | **Layanan Chatbot (Data Tidak Sesuai)** | 8       | 4%         | Bot memberikan data tidak relevan        |
 | **Layanan Chatbot (Batal)**             | 5       | 3%         | Sesi dibatalkan                          |
-| **Total**                               | **184** | **100%**   |                                          |
+| **Total**                               | **188** | **100%**   |                                          |
 
 ### Tingkat Keberhasilan Layanan
 
-* **Layanan Berhasil:** 86 sesi (47% - Chatbot + Admin)
+* **Layanan Berhasil:** 90 sesi (48% - Chatbot + Admin)
 * **Layanan Tidak Optimal:** 13 sesi (7% - Data tidak sesuai + Batal)
-* **Non-Layanan:** 85 sesi (46%)
+* **Non-Layanan:** 85 sesi (45%)
 
 ---
 
@@ -66,7 +66,7 @@ KOMANK Chatbot ini terintegrasi dengan **JAGRAPATI (Jaringan Rekapitulasi & Pema
 * **Juni 2025:** 47 sesi
 * **Juli 2025:** 22 sesi
 * **Agustus 2025:** 12 sesi
-* **September 2025:** 9 sesi (1-16 September)
+* **September 2025:** 43 sesi (1-30 September)
 
 ### Jenis Permintaan Data Populer
 
@@ -93,7 +93,8 @@ Berdasarkan analisis log pencarian:
 
 | Kata Kunci                  | Skor Relevansi | Kategori  |
 | --------------------------- | -------------- | --------- |
-| PDRB/Pertumbuhan ekonomi    | 0.85067        | Ekonomi   |
+| PDRB/Pertumbuhan ekonomi    | 0.85604        | Ekonomi   |
+| Data lansia                 | 0.84629        | Demografi |
 | Data penduduk Kota Denpasar | 0.80672        | Demografi |
 | Indeks Harga Konsumen       | 0.78072        | Ekonomi   |
 | Data UMKM                   | 0.78003        | Ekonomi   |
@@ -133,18 +134,18 @@ Chatbot KOMANK menggunakan layanan Fonnte untuk integrasi WhatsApp API. Berikut 
 
 ### Statistik Sesi Admin
 
-* **Total Sesi Admin:** 38 sesi
-* **Periode Aktif:** 23 Mei - 16 September 2025
+* **Total Sesi Admin:** 40 sesi
+* **Periode Aktif:** 23 Mei - 26 September 2025
 * **Durasi Rata-rata:** Bervariasi dari 2 menit hingga 6 jam
 * **Admin Paling Aktif:**
 
+  * Adit (Kamis): 6 sesi
   * Ria (Selasa): 5 sesi
-  * Adit (Kamis): 5 sesi
   * Nurtiana (Kamis): 4 sesi
 
 ### Status Penyelesaian
 
-Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penyelesaian 100%.
+Semua sesi admin tercatat dengan status **\"Selesai\"**, menunjukkan tingkat penyelesaian 100%.
 
 ---
 
@@ -180,6 +181,7 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 | -------- | --------- | --------------------------------- | ------------------------------------------------ | ---------- |
 | 2-8 Sep  | v1.209-v1.214 | Tidak ada fitur insight otomatis | Menambahkan fitur insight berupa trivia otomatis | ✅ Teratasi |
 | 10 Sep   | v1.215    | Nomor superadmin salah            | Mengganti nomor superadmin                       | ✅ Teratasi |
+| 30 Sep   | v1.216    | Filter assign admin belum cek pelayanan total | Menambahkan filter cek pelayanan total sebelum assign admin | ✅ Teratasi |
 
 ### Kelompok Permasalahan Utama
 
@@ -193,15 +195,16 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 | 6  | API Timeout & Validasi | Juni 2025 | v1.177 - v1.180 | ✅ Teratasi |
 | 7  | Jam Kerja & Variabel | Juni 2025 | v1.202 - v1.208 | ✅ Teratasi |
 | 8  | Insight Otomatis (Trivia of The Day) | September 2025 | v1.209 - v1.215 | ✅ Teratasi |
+| 9  | Filter Assign Admin | September 2025 | v1.216 | ✅ Teratasi |
 
 ### Statistik Pengembangan (Final)
 
-* **Total Update:** 44 entri perbaikan (v1.0 - v1.215)  
-* **Kelompok Permasalahan:** 8 masalah utama  
+* **Total Update:** 45 entri perbaikan (v1.0 - v1.216)  
+* **Kelompok Permasalahan:** 9 masalah utama  
 * **Semua Permasalahan:** ✅ Teratasi  
-* **Periode Pengembangan:** 3 April - 10 September 2025 (160 hari)  
+* **Periode Pengembangan:** 3 April - 30 September 2025 (180 hari)  
 * **Developer:** Novril Ihza Razenda, S.Tr.Stat.  
-* **Success Rate:** **100% (8/8 kelompok masalah terselesaikan)**
+* **Success Rate:** **100% (9/9 kelompok masalah terselesaikan)**
 
 ---
 ## 🎖️ PENCAPAIAN
@@ -215,11 +218,11 @@ Semua sesi admin tercatat dengan status **"Selesai"**, menunjukkan tingkat penye
 
 **Tim Pengembang:** Novril Ihza Razenda, S.Tr.Stat. ([novril.razenda@bps.go.id](mailto:novril.razenda@bps.go.id))  
 **Kontak KOMANK:** +62 812-8882-5171  
-**Last Updated:** 17 September 2025  
+**Last Updated:** 1 Oktober 2025  
 
 ---
 
-*Laporan ini disusun berdasarkan data log sistem Chatbot KOMANK periode 3 April - 16 September 2025*
+*Laporan ini disusun berdasarkan data log sistem Chatbot KOMANK periode 3 April - 30 September 2025*
 
 ## 📄 Format Dokumen
 
@@ -231,6 +234,6 @@ Laporan ini tersedia dalam beberapa format:
 
 ### Cara Menggunakan
 
-- **Untuk Cetak PDF:** Buka file HTML dan gunakan tombol "Cetak PDF"
-- **Untuk DOCX:** Buka file HTML dan gunakan tombol "Download DOCX"  
-- **Untuk Presentasi:** Gunakan file Markdown di GitHub atau konversi ke PowerPoint
+- **Untuk Cetak PDF:** Buka file HTML dan gunakan tombol \"Cetak PDF\"
+- **Untuk DOCX:** Buka file HTML dan gunakan tombol \"Download DOCX\"  
+- **Untuk Presentasi:** Gunakan file Markdown di GitHub atau konversi ke PowerPoint`
